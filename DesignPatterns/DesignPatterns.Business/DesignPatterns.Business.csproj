@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF155428-A39A-4A2D-9F40-70DAC54A84ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns.Business</RootNamespace>
+    <AssemblyName>DesignPatterns.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory\SimpleFactory.cs" />
+    <Compile Include="AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="Adapter\Adapter.cs" />
+    <Compile Include="Adapter\Adapter2.cs" />
+    <Compile Include="Bridge\Bridge.cs" />
+    <Compile Include="Bulider\ImproveBuilder.cs" />
+    <Compile Include="Bulider\SimpleBuilder.cs" />
+    <Compile Include="ChainOfResponsibilityPattern\ChainOfResponsibilityPattern.cs" />
+    <Compile Include="Command\Command3.cs" />
+    <Compile Include="Command\Command1.cs" />
+    <Compile Include="Command\Command2.cs" />
+    <Compile Include="Command\Command4.cs" />
+    <Compile Include="Command\Command5.cs" />
+    <Compile Include="Command\Command6.cs" />
+    <Compile Include="Command\Command7.cs" />
+    <Compile Include="Composite\Composite1.cs" />
+    <Compile Include="Decorator\Decorator1.cs" />
+    <Compile Include="Decorator\Decorator2.cs" />
+    <Compile Include="Facade\Facade.cs" />
+    <Compile Include="FactoryMethod\1\DBLog.cs" />
+    <Compile Include="FactoryMethod\1\LogCreator.cs" />
+    <Compile Include="FactoryMethod\1\FactoryMethodTest.cs" />
+    <Compile Include="FactoryMethod\1\FileLog.cs" />
+    <Compile Include="FactoryMethod\1\ILog.cs" />
+    <Compile Include="FactoryMethod\1\ILogCreator.cs" />
+    <Compile Include="FactoryMethod\2\DBLog.cs" />
+    <Compile Include="FactoryMethod\2\FactoryMethod2Test.cs" />
+    <Compile Include="FactoryMethod\2\FileLog.cs" />
+    <Compile Include="FactoryMethod\2\ILog.cs" />
+    <Compile Include="FactoryMethod\2\ILogCreator.cs" />
+    <Compile Include="FactoryMethod\2\LogCreator.cs" />
+    <Compile Include="Flyweight\Flyweight.cs" />
+    <Compile Include="Interpreter\Interpreter1.cs" />
+    <Compile Include="Interpreter\Interpreter2.cs" />
+    <Compile Include="Iterator\Iterator1.cs" />
+    <Compile Include="Iterator\Iterator2.cs" />
+    <Compile Include="Iterator\Iterator3.cs" />
+    <Compile Include="Iterator\Iterator4.cs" />
+    <Compile Include="Mediator\Mediator.cs" />
+    <Compile Include="Memento\Memento.cs" />
+    <Compile Include="ObjectPool\ObjectPool1.cs" />
+    <Compile Include="ObjectPool\ObjectPool2.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Clone1.cs" />
+    <Compile Include="Prototype\Clone2.cs" />
+    <Compile Include="Prototype\Clone4.cs" />
+    <Compile Include="Proxy\Proxy.cs" />
+    <Compile Include="Singleton\Singleton1.cs" />
+    <Compile Include="Singleton\Singleton2.cs" />
+    <Compile Include="Singleton\Singleton3.cs" />
+    <Compile Include="Singleton\Singleton4.cs" />
+    <Compile Include="Singleton\Singleton5.cs" />
+    <Compile Include="State\State.cs" />
+    <Compile Include="Strategy\Strategy.cs" />
+    <Compile Include="TemplateMethod\TemplateMethod.cs" />
+    <Compile Include="Visitor\Visitor1.cs" />
+    <Compile Include="Visitor\Visitor2.cs" />
+    <Compile Include="Visitor\Visitor3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FactoryMethod\1\FactoryMethod1.cd" />
+    <Compile Include="Prototype\Clone3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Command\Command.txt" />
+    <Content Include="Interpreter\Interpreter.txt" />
+    <Content Include="Iterator\Iterator.txt" />
+    <Content Include="ObjectPool\ObjectPool.txt" />
+    <Content Include="Visitor\行为模式综述.txt" />
+    <Content Include="Visitor\Visitor.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

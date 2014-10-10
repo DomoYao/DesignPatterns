@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DesignPatterns.Business.FactoryMethod._2.DBLog" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\2\DBLog.cs</FileName>
+      <NewMemberFileName>FactoryMethod\1\DBLog.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Business.FactoryMethod._2.FileLog" BaseTypeListCollapsed="true">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\2\FileLog.cs</FileName>
+      <NewMemberFileName>FactoryMethod\1\FileLog.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Business.FactoryMethod._2.LogCreator&lt;T&gt;" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\2\LogCreator.cs</FileName>
+      <NewMemberFileName>FactoryMethod\1\LogCreator.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DesignPatterns.Business.FactoryMethod._2.ILogCreator">
+    <Position X="9.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\2\ILogCreator.cs</FileName>
+      <NewMemberFileName>FactoryMethod\1\ILogCreator.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DesignPatterns.Business.FactoryMethod._2.ILog">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FactoryMethod\2\ILog.cs</FileName>
+      <NewMemberFileName>FactoryMethod\1\ILog.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

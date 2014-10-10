@@ -1,0 +1,74 @@
+﻿
+设计模式之美：Visitor（访问者）
+
+索引
+
+    意图
+    结构
+    参与者
+    适用性
+    效果
+    相关模式
+    实现
+        实现方式（一）：Visitor 模式结构样式代码。
+        实现方式（二）：使用 Visitor 模式解构设计。
+        实现方式（三）：使用 Acyclic Visitor 模式解构设计。
+
+意图
+
+表示一个作用于某对象结构中的各元素的操作。
+
+Visitor 使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。
+
+Represent an operation to be performed on the elements of an object structure.
+
+Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+
+结构
+
+参与者
+
+Visitor
+
+    为该对象结构中 ConcreteElement 的每一个类声明一个 Visit 操作。该操作的名字和特征标识了发送 Visit 请求给该访问者的那个类。
+
+ConcreteVisitor
+
+    实现每个由 Visitor 声明的操作。
+
+Element
+
+    定义一个 Accept 操作，它以一个 Visitor 为参数。
+
+ConcreteElement
+
+    实现 Accept 操作，该操作以一个 Visitor 为参数。
+
+ObjectStructure
+
+    能枚举 Element。
+    可以提供一个高层的接口以允许该 Visitor 访问它的元素。
+    可以是一个 Composite 或是一个集合、列表或无序集合。
+
+适用性
+
+在以下情况下可以使用 Visitor 模式：
+
+    一个对象结构包含很多类操作，它们有不同的接口，而你想对这些对象实施一些依赖于其具体类的操作。
+    需要对一个对象结构中的对象进行很多不同的并且不相关的操作，而你想避免让这些操作污染这些对象的类。
+    定义对象结构的类很少改变，但经常需要在此结构上定义新的操作。
+
+缺点
+
+    增加新的 ConcreteElement 类很困难。添加新的 ConcreteElement 都要在 Visitor 中添加一个新的抽象操作。
+    可能破坏封装。Visitor 假定 ConcreteElement 接口的功能足够强，足以让 Visitor 进行它的工作。但有时会迫使你提供 ConcreteElement 的内部状态的公共操作。
+
+效果
+
+    Visitor 模式使得易于增加新的操作。
+    Visitor 集中相关的操作而分离无关的操作。
+
+相关模式
+
+    Visitor 可以用于对一个 Composite 模式定义的对象结构进行操作。
+    Visitor 可以用于 Interpreter 解释。

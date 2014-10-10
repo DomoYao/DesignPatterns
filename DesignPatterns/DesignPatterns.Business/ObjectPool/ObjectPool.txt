@@ -1,0 +1,56 @@
+﻿
+设计模式之美：Object Pool（对象池）
+
+索引
+
+    意图
+    结构
+    参与者
+    适用性
+    效果
+    相关模式
+    实现
+        实现方式（一）：实现 DatabaseConnectionPool 类。
+        实现方式（二）：使用对象构造方法和预分配方式实现 ObjectPool 类。
+
+意图
+
+运用对象池化技术可以显著地提升性能，尤其是当对象的初始化过程代价较大或者频率较高时。
+
+Object pooling can offer a significant performance boost; it is most effective in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high.
+
+结构
+
+参与者
+
+Reusable
+
+    类的实例与其他对象进行有限时间的交互。
+
+ReusablePool
+
+    管理类的实例。
+
+Client
+
+    使用类的实例。
+
+适用性
+
+当以下情况成立时可以使用 Object Pool 模式：
+
+    类的实例可重用于交互。
+    类的实例化过程开销较大。
+    类的实例化的频率较高。
+    类参与交互的时间周期有限。
+
+效果
+
+    节省了创建类的实例的开销。
+    节省了创建类的实例的时间。
+    存储空间随着对象的增多而增大。
+
+相关模式
+
+    通常，可以使用 Singleton 模式实现 ReusablePool 类。
+    Factory Method 模式封装了对象的创建的过程，但其不负责管理对象。Object Pool 负责管理对象。
