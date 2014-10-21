@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using Threads.Bussiness;
 
@@ -61,12 +57,31 @@ namespace Threads.TestApp
             //AsyncFile.Client3();
             #endregion
 
-            #region 线程同步
+            #region 4、线程同步
+            // 使用锁的性能影响
+            //Synchronization.Client1();
 
+            // 不使用锁，数据不是我们想要的
+            //Synchronization.Client2();
+
+            // 使用锁
+            //Synchronization.Client3();
+
+            // Monitor实现线程同步
+            //Synchronization.Client4();
+
+            // ReaderWriterLock实现线程同步
+            Synchronization.Client5();
+           
             #endregion
 
+            #region 5、线程同步——事件构造
+            
+
+            #endregion
            
         }
 
+       
     }
 }
