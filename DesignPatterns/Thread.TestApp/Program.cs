@@ -47,11 +47,25 @@ namespace Threads.TestApp
             // OneStepThread.Client5();
 
             // 任务工厂
-            OneStepThread.Client6();
+            //OneStepThread.Client6();
             #endregion
 
-            #region 
+            #region 3、线程池中的I/O线程
+            // 异步写入文件
+            //AsyncFile.Client1();
+
+            // 异步读取文件
+            //AsyncFile.Client2();
+
+            // 异步请求
+            //AsyncFile.Client3();
             #endregion
+
+            #region 线程同步
+
+            #endregion
+
+           
         }
 
     }

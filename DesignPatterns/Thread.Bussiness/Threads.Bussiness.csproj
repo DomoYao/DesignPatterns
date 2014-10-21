@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncFile.cs" />
     <Compile Include="OneStepThread.cs" />
     <Compile Include="SimpleThread.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
