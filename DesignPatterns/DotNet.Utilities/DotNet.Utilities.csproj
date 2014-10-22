@@ -64,6 +64,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -79,6 +80,10 @@
     <Compile Include="FTP操作类\FTPClient.cs" />
     <Compile Include="FTP操作类\FTPHelper.cs" />
     <Compile Include="FTP操作类\FTPOperater.cs" />
+    <Compile Include="序列化\BinarySerializerHelp.cs" />
+    <Compile Include="序列化\JSONSerializeHelp.cs" />
+    <Compile Include="序列化\SoapSerializeHelp.cs" />
+    <Compile Include="序列化\XMLSerializeHelp.cs" />
     <Compile Include="网络\HttpHelper.cs" />
     <Compile Include="网络\IpHelper.cs" />
     <Compile Include="JSON操作\ConvertJson.cs" />
