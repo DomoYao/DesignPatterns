@@ -5,6 +5,8 @@ using System.Text;
 using DesignPatterns.Business.AbstractFactory.AbstractFactoryPattern.Implementation3;
 using DesignPatterns.Business.FactoryMethod._1;
 using DesignPatterns.Business.FactoryMethod._2;
+using DotNet.Utilities;
+
 
 namespace DesignPatterns
 {
@@ -101,7 +103,13 @@ namespace DesignPatterns
             DesignPatterns.Business.ObjectPool1.Client.TestCase1();
 
             //随机数
-            //Console.WriteLine(DesignPatterns.UniqueId.UniqueId.Generate());
+            Console.WriteLine(DesignPatterns.UniqueId.UniqueId.Generate());
+            var randomOperate = new RandomOperate();
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(randomOperate.GenerateCheckCode(1));
+            }
+            
 
             // 快速排序
             //DesignPatterns.Sort.QuickSort.Client();
