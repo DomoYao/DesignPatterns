@@ -82,6 +82,8 @@
     <Compile Include="FTP操作类\FTPOperater.cs" />
     <Compile Include="反射\EnumExtension.cs" />
     <Compile Include="反射\ReflectionHelper.cs" />
+    <Compile Include="图片\Thumbnail.cs" />
+    <Compile Include="图片\WaterMark.cs" />
     <Compile Include="序列化\BinarySerializerHelp.cs" />
     <Compile Include="序列化\IObjectSerializer.cs" />
     <Compile Include="序列化\JSONSerializeHelp.cs" />
