@@ -80,8 +80,15 @@
     <Compile Include="FTP操作类\FTPClient.cs" />
     <Compile Include="FTP操作类\FTPHelper.cs" />
     <Compile Include="FTP操作类\FTPOperater.cs" />
+    <Compile Include="反射\EnumExtension.cs" />
+    <Compile Include="反射\ReflectionHelper.cs" />
     <Compile Include="序列化\BinarySerializerHelp.cs" />
+    <Compile Include="序列化\IObjectSerializer.cs" />
     <Compile Include="序列化\JSONSerializeHelp.cs" />
+    <Compile Include="序列化\ObjectBinarySerializer.cs" />
+    <Compile Include="序列化\ObjectDataContractSerializer.cs" />
+    <Compile Include="序列化\ObjectJsonSerializer.cs" />
+    <Compile Include="序列化\ObjectXmlSerializer.cs" />
     <Compile Include="序列化\SoapSerializeHelp.cs" />
     <Compile Include="序列化\XMLSerializeHelp.cs" />
     <Compile Include="网络\HttpHelper.cs" />
