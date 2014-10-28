@@ -71,15 +71,32 @@ namespace Threads.TestApp
             //Synchronization.Client4();
 
             // ReaderWriterLock实现线程同步
-            Synchronization.Client5();
+            //Synchronization.Client5();
            
             #endregion
 
             #region 5、线程同步——事件构造
-            
+            //AutoResetEvent （自动重置事件） 
+            //ThreadOfEvent.Client1();
+            //ThreadOfEvent.Client2();
 
+            // ManualResetEvent(手动重置事件)
+            //ThreadOfEvent.Client3();
+
+            // 跨进程之间同步
+            //ThreadOfEvent.Client4();
             #endregion
-           
+
+            #region 6、线程同步——信号量和互斥体
+            // 信号量（Semaphore）
+            //SemaphoreAndMutex.Client1();
+            //SemaphoreAndMutex.Client2();
+
+            // 互斥体（Mutex）
+            //SemaphoreAndMutex.Client3();
+            SemaphoreAndMutex.Client4();
+            #endregion
+
         }
 
        
